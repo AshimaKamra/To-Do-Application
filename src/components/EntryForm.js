@@ -38,7 +38,6 @@ const EntryForm = React.memo(props =>{
                     <button type="submit" id="submit-button">Add Information</button>
                 </div>
                 </form>
-            
         </section>
     )
 })
