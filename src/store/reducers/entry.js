@@ -2,7 +2,11 @@
 
 
  const initialState = {
-     results:[]
+     results:[],
+     validation:{
+         required:true
+     },
+     valid:false
  }
 
  const deleteResult = ( state, action ) => {

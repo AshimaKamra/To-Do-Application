@@ -29,9 +29,28 @@
     border-radius: 3px;
     background-color:#ff2058;
 }
+
+#submit-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color:rgb(70,153,179)
+    
+}
 .entry-form__actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  
+  
+  input.error{
+    border-color:red;
+  }
+
+  .input-feedback{
+    color:rgb(235,54,54);
+    margin-top:-15px;
+    font-size:14px;
+    margin-bottom:20px
   }
   

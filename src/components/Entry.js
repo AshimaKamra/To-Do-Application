@@ -5,8 +5,9 @@ import { connect } from 'react-redux';
 import * as actionTypes from '../store/actions/actionCreators';
 
 
+
 const Entry=(props)=>{
-    const [userEntry,setUserEntry]=useState([]);
+   // const [userEntry,setUserEntry]=useState([]);
 
     useEffect(()=>{
         props.onFetchEntry(props.userEntry);
@@ -14,31 +15,9 @@ const Entry=(props)=>{
 
 
 
-    // const addEntryHandler=entry=>{
-    //     fetch('https://to-do-application-c601d.firebaseio.com/entry.json',{
-    //     method:'POST',
-    //     body: JSON.stringify(entry),
-    //     headers:{'Content-type':'application/json'}
-    // }).then(response=>{
-    //     return response.json();
-    // }).then(responseData=>{
-    //     props.onAddEntry({id:responseData.name,...entry})
-    // });
-    // }
-    
-
-
-    // const deleteEntryHandler=entryId=>{
-    //     fetch(`https://to-do-application-c601d.firebaseio.com/entry/${entryId}.json`,{
-    //     method:'DELETE',
-    // }).then(response=>{
-    //     props.onDeleteEntry(entryId)
-    // })
-    // };
-
     return(
         <div className="App">
-            <EntryForm onAddEntry={props.onAddEntry}/>
+            <EntryForm onAddEntry={props.onAddEntry} />
 
             <section>
                 {/*The list will be displayed here*/}
